@@ -11,5 +11,5 @@ Meteor pet project for demoing the following functionality:
 
 The two HTML5 games are available here:
 
-* https://github.com/cykod/AlienInvasion
-* http://www.wrox.com/WileyCDA/WroxTitle/Professional-HTML5-Mobile-Game-Development.productCd-1118301323,descCd-DOWNLOAD.html
+* Alien Invasion: https://github.com/cykod/AlienInvasion
+* Froot Wars: http://www.wrox.com/WileyCDA/WroxTitle/Professional-HTML5-Mobile-Game-Development.productCd-1118301323,descCd-DOWNLOAD.html
