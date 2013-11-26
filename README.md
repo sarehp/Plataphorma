@@ -9,12 +9,13 @@ Meteor pet project for demoing the following functionality:
 * Integration of non-Meteor code in compatibility folder (HTML5 games Alien Invasion and Froot Wars)
 * Usage of allow to control client access to collections
 
-When run, Plataphorma offers the possibility to run 2 different games. A chat is available when no game is selected, and a different chat is available while playing each of the games. 
+When run, Plataphorma offers the possibility to run 2 different games. When a game is finished the points are sent to the server.
 
-When a game is finished the points are published on the right side. 
+On the right side appear the best players of each game, of best overall if no game is selected.
 
+On the left side a general chatroom is available for signed in users. Each game has its own chatroom.
 
-The two HTML5 games are available here:
+The two HTML5 games integrated are available here:
 
 * Alien Invasion: https://github.com/cykod/AlienInvasion
 * Froot Wars: http://www.wrox.com/WileyCDA/WroxTitle/Professional-HTML5-Mobile-Game-Development.productCd-1118301323,descCd-DOWNLOAD.html
