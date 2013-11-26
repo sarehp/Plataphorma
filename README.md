@@ -29,7 +29,7 @@ A live version of this code is running here: http://plataphorma.meteor.com
 To run the project locally, clone the repo and run ```meteor``` inside it. You can see in .meteor/packages that this Meteor project uses these packages:
 * ```meteor remove autopublish```
 * ```meteor remove insecure```
-* ``'meteor add bootstrap```
+* ```meteor add bootstrap```
 * ```meteor add accounts-ui```
 * ```meteor add accounts-password```
 
