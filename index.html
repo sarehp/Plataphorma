@@ -1,0 +1,150 @@
+<head>
+  <title>Plataphorma</title>
+</head>
+<body>
+
+
+  <div class="jumbotron">
+    <div>
+      {{ loginButtons }}
+    </div>
+    <div class="container">
+      {{> welcome  }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span2">
+      {{> chat}}
+    </div>    
+    <div class="span7">
+      {{> choose_game }}
+      <div id='container' class="span7">
+	{{> alien_invasion}}      
+      </div>
+      <div id="gamecontainer" class="span7">
+	{{> froot_wars}}      
+      </div>
+    </div>
+    <div class="span2">
+      {{> best_players }}
+    </div>
+  </div>
+
+</body>
+
+
+
+<template name="chat">
+  {{#if none }}
+  <h3> Chat Plataphorma </h3>
+  {{else}}
+  <h3> Chat {{gameName}} </h3>
+  {{/if}}
+  
+  {{> input    }}
+  {{> messages }}
+</template>
+
+
+<template name="welcome">
+  <h1>Plataphorma</h1>
+  <p>  Let's play together </p>
+</template>
+
+
+<template name="input">
+  <p>Message: <input type="text" id="message"></p>
+
+  
+  <div class="alert fade in" id="login-error" style="display:none;">
+    <button type="button" class="close">x</button>
+    You must be signed in to post messages.
+  </div>
+
+</template>
+
+<template name="messages">
+  <table id="rooms" class="table table-striped">  
+    <tbody>
+      {{#each messages}}
+      <tr>
+	<td><strong>{{name}}:</strong></td>
+	<td>{{message}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>
+
+
+<template name="choose_game">
+  <div id="games" class="btn-group">
+    <input id="none" class="btn" type="button" value="None" />
+    {{#each games}}
+    <input id="{{name}}" value="{{name}}" type="button" class="btn btn-primary" />
+    {{/each}}
+  </div>
+</template>
+
+
+<template name="best_players">
+  {{#if none }}
+  <h3> Best players overall </h3>
+  {{else}}
+  <h3> Best players {{gameName}} </h3>
+  {{/if}}
+  
+  <table id="rooms" class="table table-striped">  
+    <tbody>
+      {{#each best_players}}
+      <tr>
+	<td><strong>{{name}}</strong> ({{game}}): </td>
+	<td>{{points}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  
+</template>
+
+
+<template name="froot_wars">
+
+  <canvas id="gamecanvas" width="640" height="480" class="gamelayer">
+  </canvas>
+  
+  <div id="scorescreen" class="gamelayer">
+    <img id="togglemusic" src="images/icons/sound.png" onclick="game.toggleBackgroundMusic();">
+    <img src="images/icons/prev.png" onclick="game.restartLevel();">
+    <span id="score">Score: 0</span>
+  </div>
+  
+  <div id="gamestartscreen" class="gamelayer">
+    <img src="images/icons/play.png" alt="Play Game" onclick = "game.showLevelScreen();"><br>
+    <img src="images/icons/settings.png" alt="Settings">
+  </div>
+  
+  <div id="levelselectscreen" class="gamelayer">
+  </div>
+  
+  <div id="loadingscreen" class="gamelayer">
+    <div id="loadingmessage"></div>
+  </div>
+  
+  <div id="endingscreen" class="gamelayer">
+    <div>
+      <p id="endingmessage">The Level Is Over Message</p>
+      <p id="playcurrentlevel" onclick="game.restartLevel();"><img src="images/icons/prev.png"> Replay Current Level</p>
+      <p id="playnextlevel" onclick="game.startNextLevel();"><img src="images/icons/next.png"> Play Next Level </p> 
+      
+      <p id="returntolevelscreen"onclick="game.showLevelScreen();"><img src="images/icons/return.png"> Return to Level Screen</p>
+    </div>
+  </div>
+  
+</template>
+
+
+<template name="alien_invasion">
+  <canvas id='game' width='320' height='480'></canvas>
+</template>
