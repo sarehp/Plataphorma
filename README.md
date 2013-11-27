@@ -22,6 +22,8 @@ The original code of the two HTML5 games integrated in this project is available
 * Alien Invasion: https://github.com/cykod/AlienInvasion
 * Froot Wars: http://www.wrox.com/WileyCDA/WroxTitle/Professional-HTML5-Mobile-Game-Development.productCd-1118301323,descCd-DOWNLOAD.html
 
+Bootstrap style (file bootstrap.min.css) provided by http://bootswatch.com
+
 
 Running the project
 -------------------
