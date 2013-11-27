@@ -77,6 +77,8 @@ Messages.allow({
 	return Meteor.userId();
     },
     remove: function (userId, docs){
+        // Only admin user can remove chat messages.
+        // No UI for this, you can test from console
 	return adminUser(userId);
     }
 });
