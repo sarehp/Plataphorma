@@ -16,9 +16,9 @@ Plataphorma offers the possibility to run 2 different HTML5 games: Alien Invasio
 
 On the right side of the screen the best players of each game are shown, updated in real time each time a player finishes a game. If no game is selected, the best players overall are shown.
 
-On the left side of the screen a general chatroom is available. Only signed in users can post messages. Each game has its own chatroom.
+On the left side of the screen a chatroom for the current game is available. Only signed in users can post messages. If no game is selected a general chatroom is shown.
 
-The two HTML5 games integrated are available here:
+The original code of the two HTML5 games integrated in this project is available here:
 * Alien Invasion: https://github.com/cykod/AlienInvasion
 * Froot Wars: http://www.wrox.com/WileyCDA/WroxTitle/Professional-HTML5-Mobile-Game-Development.productCd-1118301323,descCd-DOWNLOAD.html
 
