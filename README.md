@@ -12,13 +12,13 @@ Meteor pet project created to teach my students the following Meteor functionali
 ![ScreenShot](/screenshot.png)
 
 
-Plataphorma offers the possibility to run 2 different games: Alien Invasion or Froot Wars. 
+Plataphorma offers the possibility to run 2 different HTML5 games: Alien Invasion and Froot Wars. 
 
-When a game is finished the points are sent to the server. On the right side of thw window appear the best players of each game, or the best players overall if no game is selected.
+On the right side of the screen the best players of each game are shown, updated in real time each time a signed in player finishes a game. If no game is selected, the best players overall are shown.
 
-On the left side of the screen a general chatroom is available. Only signed in users can post messages. Each game has its own chatroom.
+On the left side of the screen a chatroom for the current game is available. Only signed in users can post messages. If no game is selected a general chatroom is shown.
 
-The two HTML5 games integrated are available here:
+The original code of the two HTML5 games integrated in this project is available here:
 * Alien Invasion: https://github.com/cykod/AlienInvasion
 * Froot Wars: http://www.wrox.com/WileyCDA/WroxTitle/Professional-HTML5-Mobile-Game-Development.productCd-1118301323,descCd-DOWNLOAD.html
 

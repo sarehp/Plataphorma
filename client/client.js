@@ -40,7 +40,7 @@ Meteor.startup(function(){
     $('#gamecontainer').hide();
     $('#container').hide();
 
-    $('.alert .close').click(function(e) {
+    $(document).on("click", ".alert .close", function(e) {
 	$(this).parent().hide();
     });
 });
