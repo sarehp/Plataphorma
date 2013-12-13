@@ -8,6 +8,7 @@ Meteor pet project created to teach my students the following Meteor functionali
 * Meteor.methods/call 
 * Integration of non-Meteor code in compatibility folder (HTML5 games Alien Invasion and Froot Wars)
 * Usage of allow to control client access to collections
+* Integration of WebRTC support
 
 ![ScreenShot](/screenshot.png)
 
@@ -24,11 +25,15 @@ The original code of the two HTML5 games integrated in this project is available
 
 Bootstrap style (file bootstrap.min.css) provided by http://bootswatch.com
 
+Video chat using SimpleWebRTC library http://simplewebrtc.com
+
 
 Running the project
 -------------------
 
 A live version of this code is running here: http://plataphorma.meteor.com
+
+Use a recent Firefox browser to test the videochat functionality
 
 To run the project locally, clone the repo and run ```meteor``` inside it. You can see in .meteor/packages that this Meteor project uses these packages:
 * ```meteor remove autopublish```
