@@ -8,9 +8,16 @@
     <div>
       {{ loginButtons }}
     </div>
-    <div class="container">
+    <div class="row container">
+      <div class="span5">
       {{> welcome  }}
-      {{> my-video }}
+      </div>
+      <div "class="span1"> 
+        {{> my-video }}
+      </div>
+      <div "class="span1"> 
+      {{> remote-videos }}
+      </div>
     </div>
   </div>
 
@@ -20,7 +27,6 @@
     </div>    
     <div class="span7">
       {{> choose_game }}
-      {{> remote-videos }}
       <div id='container' class="span7">
 	{{> alien_invasion}}      
       </div>
