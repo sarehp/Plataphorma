@@ -6,18 +6,10 @@
 
   <div class="jumbotron">
     <div>
-      {{ loginButtons }}
+      {{> loginButtons }}
     </div>
-    <div class="row container">
-      <div class="span5">
+    <div class="container">
       {{> welcome  }}
-      </div>
-      <div class="span1"> 
-        {{> my_video }}
-      </div>
-      <div class="span1"> 
-      {{> remote_videos }}
-      </div>
     </div>
   </div>
 
@@ -150,14 +142,6 @@
     </div>
   </div>
   
-</template>
-
-<template name="my_video">
-    <video id="localVideo"></video>
-</template>
-
-<template name="remote_videos">
-    <div id="remotesVideos"></div>
 </template>
 
 
