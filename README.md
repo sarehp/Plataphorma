@@ -9,7 +9,6 @@ Meteor pet project created to teach my students the following Meteor functionali
 * Integration of non-Meteor code in compatibility folder (HTML5 games Alien Invasion and Froot Wars)
 * Usage of allow to control client access to collections
 
-![ScreenShot](/screenshot.png)
 
 
 Plataphorma offers the possibility to run 2 different HTML5 games: Alien Invasion and Froot Wars. 
