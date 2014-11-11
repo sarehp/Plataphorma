@@ -12,11 +12,11 @@
       <div class="span5">
       {{> welcome  }}
       </div>
-      <div "class="span1"> 
-        {{> my-video }}
+      <div class="span1"> 
+        {{> my_video }}
       </div>
-      <div "class="span1"> 
-      {{> remote-videos }}
+      <div class="span1"> 
+      {{> remote_videos }}
       </div>
     </div>
   </div>
@@ -146,17 +146,17 @@
       <p id="playcurrentlevel" onclick="game.restartLevel();"><img src="images/icons/prev.png"> Replay Current Level</p>
       <p id="playnextlevel" onclick="game.startNextLevel();"><img src="images/icons/next.png"> Play Next Level </p> 
       
-      <p id="returntolevelscreen"onclick="game.showLevelScreen();"><img src="images/icons/return.png"> Return to Level Screen</p>
+      <p id="returntolevelscreen" onclick="game.showLevelScreen();"><img src="images/icons/return.png"> Return to Level Screen</p>
     </div>
   </div>
   
 </template>
 
-<template name="my-video">
+<template name="my_video">
     <video id="localVideo"></video>
 </template>
 
-<template name="remote-videos">
+<template name="remote_videos">
     <div id="remotesVideos"></div>
 </template>
 
