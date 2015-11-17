@@ -28,7 +28,7 @@ Bootstrap style (file bootstrap.min.css) provided by http://bootswatch.com
 Running the project
 -------------------
 
-A live version of this code is running here: http://demogames.meteor.com
+A live version of this code is running here: http://plataphorma.meteor.com
 
 Use a recent Firefox browser to test the videochat functionality
 
